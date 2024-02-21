@@ -1,0 +1,87 @@
+<div >
+  <!-- <app-learnformcontrolcomponent></app-learnformcontrolcomponent> -->
+
+</div>
+
+<br><br><br>
+<div>
+  <!-- <app-profile-editor></app-profile-editor> -->
+</div>
+
+<div class="body" mb="10px">
+
+
+  <form  [formGroup]="registerForm" (ngSubmit)="onSubmit()" >
+<div class="row" >
+  <div class="col"  >
+    <h1 class="h1"> Register form</h1>
+  </div>
+</div>
+
+<br>
+<br>
+<div class="row" >
+  <div class="col">
+    <label >userName : </label>
+    <input type="text" name="username" FormControlName="userName">
+  </div>
+  
+  <div class="col">
+    <label >emailId:</label>
+    <input type="text" name="emailid" FormControlName="emailId">
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row">
+  <div class="col">
+    <label >phoneNum:</label>
+    <input type="text" name="phonenumber" FormControlName="phoneNumber">
+  </div>
+
+  <div class="col" >
+  <label > Gender:</label>
+  <label for="m">m :</label>
+  <input type="radio" name="m" FormControlName="male">
+  <label for="f">f :</label>
+  <input type="radio" name="f" FormControlName="female">
+</div>
+  
+</div>
+<br><br>
+
+<div class="row">
+  <div class="col">
+    <label >password:</label>
+    <input type="text" name="password" FormControlName="passWord">
+
+  </div>
+
+  <br>
+  <br>
+  <div class="col">
+    <label >password:</label>
+    <input type="text" name="password" FormControlName="passWord">
+  </div>
+</div>
+<br>
+<br>
+<div class="row">
+  <div class="col ">
+    <div class="b">
+      <button type ="submit" class="btn btn-primary"  [disabled]="!registerForm.valid">submit</button>
+    </div>
+  </div>  
+</div>
+
+
+<br><br>
+
+
+
+</form>
+
+
+</div>
